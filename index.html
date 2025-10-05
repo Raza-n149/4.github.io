@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task #3 </title>
+    <link rel="stylesheet" href="стиль.css">
+
+    
+</head>
+
+
+
+<body class = "body">  
+    <header class = "header">
+      <div class = "logo">
+      <img class= "picture" src="Logo.png" title = "logo" height = 120 width=120 alt="Site logo">    
+      <h1 title = "Задание №3"> WAVE </h1> 
+    </div>
+      <nav class = "nav">    
+          <a href="#links" id = "nav_button" >Links</a>
+          <a href="#persons" id = "nav_button" >Persons</a>
+          <a href="#form" id = "nav_button" >Form</a>  
+      </nav>  
+
+    </header>
+
+
+<main class = "main">
+    <div class = "links" id = "links">
+      <div class = "window">
+      <h1 title = "Ссылки">Links</h1>
+          <p> <a href="https://vk.com/r.namtok"> Раза </a> </p>
+		<p> <a href="https://vk.com/a.liverova06"> Ангелина </a> </p>
+		<p> <a href="https://vk.com/h_alexandr"> Александр </a> </p>
+		<p> <a href="https://vk.com/lkarapetyashka"> Лианна </a> </p>
+		<p> <a href="https://vk.com/ksenniaaa_kkkak"> Ксения </a> </p>
+		<p> <a href="https://vk.com/shekeryantss"> Ованес </a> </p>
+		<p> <a href="https://vk.com/levidda"> Лиза </a> </p>
+
+
+    </div>
+  </div>
+
+  <div class = "window">
+<div class = "table">
+
+  <table class = "table" id="persons">
+    <thead>
+                    <tr>
+                        <td> Name </td>
+                        <td> Surname </td>
+                        <td> Old </td>
+                        <td> Height </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Person </td>
+                        <td> 1 </td>
+                        <td> 19 </td>
+                        <td> 164 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 2 </td>
+                        <td> 19 </td>
+                        <td> 120 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 3 </td>
+                        <td> 19 </td>
+                        <td> 163,5 </td>
+                    </tr>
+			<tr>
+                        <td> Person </td>
+                        <td> 4 </td>
+                        <td> 18 </td>
+                        <td> 170 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 5 </td>
+			<td> 18 </td>
+                        <td> 186 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 6 </td>
+                        <td> 19 </td>
+			<td> 187 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 7 </td>
+                        <td> 19 </td>
+                        <td> 178 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 8 </td>
+                        <td> 19 </td>
+			<td> 189 </td>
+                    </tr>
+                    <tr>
+                        <td> Person </td>
+                        <td> 1 </td>
+                        <td> 19 </td>
+                        <td> 163 </td>
+                    </tr>
+                </tbody>
+            </table>
+</div>
+</div>
+
+   
+<div class = "form">
+
+  <form action="/" method="POST" class = "window">
+    <label id = "form">
+      ФИО:<br />
+      <input name="field-email" class = "field" 
+      placeholder="Введите ваши ФИО" />
+    </label><br />
+    <label>
+      Телефон:<br />
+      <input name="field-name" class = "field"
+      placeholder="Введите ваш номер телефона" />
+    </label><br />
+    <label>
+      Email:<br />
+      <input name="field-email" class = "field"
+      type="email"
+      placeholder="Введите вашу почту" />
+    </label><br />
+    <label>
+      Дата рождения:<br />
+      <input name="field-date" class = "field"
+      value="2019-08-13"
+      type="date" />
+    </label><br />
+    Пол<br />
+    <label><input type="radio" checked="checked"
+      name="radio-group-1" value="Значение1" />
+      Женский</label>    
+      <label><input type="radio"   
+        name="radio-group-1" value="Значение2" />
+        Мужской</label><br />
+        <label>
+          Ваш любимый язык программирования:
+          <br />
+          <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+        </select>
+      </label><br />
+      <label>
+        Биография:<br />
+        <textarea class = "field" name="field-name-2">Расскажите о себе</textarea>
+      </label><br />
+      <br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрактом ознакомлен (а)</label><br />
+        <input type="submit" class = "field" value="Сохранить" />
+      </form>
+      <div id="down"> </div>
+  </div>
+</main>
+
+      <div class = "footer">
+        <footer>
+          <p>&copy; Raza Namitokova </p>
+        </footer>
+      </div>
+    </body>
+    </html>

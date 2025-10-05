@@ -1,0 +1,153 @@
+.body {
+  background-color: #4A5C6A;
+  background-size: 100% auto;
+  height: 50px;
+  align-items: center;
+  font-weight: bolder;
+  color: #9BA8AB;
+}
+
+.header,.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 5%;
+  background-color: #11212D;
+  padding: 10px;
+  font-size: 20px; /*Размер шрифта*/
+  color: #CCD0CF! important; /* Цвет текста */
+  margin-bottom: 15px;
+  margin-top: 15px;
+  max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
+}
+
+
+
+.header h1 {
+font-size: 60px;
+}
+
+
+
+.picture{
+float: left;
+margin-left: 25px;
+margin-top: 20px;
+}
+
+
+.table {
+border-collapse: collapse; /* Убирает двойные границы между ячейками */
+overflow-x: auto;
+order: 1;
+}
+
+th, td {
+border: 3px solid #06141B; /* Граница для ячеек */
+text-align: center; /* Выравнивание текста */
+padding: 8px; /* Отступы внутри ячеек */
+}
+
+th {
+background-color: #06141B! important;
+color: #CCD0CF! important;
+}
+
+tbody tr:nth-child(even) {
+background-color: #9BA8AB; /* Цвет фона для четных*/
+color: #253745! important;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #CCD0CF; /* Цвет фона для нечетных*/
+color: #06141B! important;
+}
+
+.link {
+text-decoration: none;
+}
+
+
+.window{
+background-color: #253745;
+padding: 20px;
+font-size: 20px;
+margin: auto;
+margin-bottom: 15px;
+max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
+border-radius: 3%;
+display: flex;
+flex-direction: column;
+}
+
+.field{
+  width: 100%;
+}
+
+.links{
+  order: 2;
+}
+
+.form{
+  order: 3;
+}
+
+.nav{
+  display:flex;
+  order: 3;
+  flex-direction: column;
+  padding: 10px
+  }
+
+#nav_button{
+  color: #CCD0CF;
+  padding: 5px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width: 576px) {
+  .main{
+    display: contents;
+  }
+  .window{
+    width: 80%;
+    border-radius: 5%;
+    padding: 50px;
+    max-width: 960px;
+
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav{
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 15px;
+
+    }
+
+    .links{
+      order: 1;
+    }
+
+
+    .table{
+      order: 2;
+
+    }
+
+    .header, .footer{
+      border-radius: 10%;
+      flex-direction: row;
+    }
+
+    .field{
+      width: 200px;
+    }
+}
