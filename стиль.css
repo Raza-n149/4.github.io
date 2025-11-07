@@ -14,20 +14,16 @@
   border-radius: 5%;
   background-color: #11212D;
   padding: 10px;
-  font-size: 20px; /*Размер шрифта*/
-  color: #CCD0CF! important; /* Цвет текста */
+  font-size: 20px;
+  color: #CCD0CF! important;
   margin-bottom: 15px;
   margin-top: 15px;
-  max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
+  max-width: -webkit-fill-available;
 }
-
-
 
 .header h1 {
 font-size: 60px;
 }
-
-
 
 .picture{
 float: left;
@@ -35,17 +31,16 @@ margin-left: 25px;
 margin-top: 20px;
 }
 
-
 .table {
-border-collapse: collapse; /* Убирает двойные границы между ячейками */
+border-collapse: collapse;
 overflow-x: auto;
-order: 1;
+order: 1; /* Таблица будет первой в мобильной версии */
 }
 
 th, td {
-border: 3px solid #06141B; /* Граница для ячеек */
-text-align: center; /* Выравнивание текста */
-padding: 8px; /* Отступы внутри ячеек */
+border: 3px solid #06141B;
+text-align: center;
+padding: 8px;
 }
 
 th {
@@ -54,12 +49,12 @@ color: #CCD0CF! important;
 }
 
 tbody tr:nth-child(even) {
-background-color: #9BA8AB; /* Цвет фона для четных*/
+background-color: #9BA8AB;
 color: #253745! important;
 }
 
 tbody tr:nth-child(odd) {
-background-color: #CCD0CF; /* Цвет фона для нечетных*/
+background-color: #CCD0CF;
 color: #06141B! important;
 }
 
@@ -67,14 +62,13 @@ color: #06141B! important;
 text-decoration: none;
 }
 
-
 .window{
 background-color: #253745;
 padding: 20px;
 font-size: 20px;
 margin: auto;
 margin-bottom: 15px;
-max-width: -webkit-fill-available; /*ширина окна подстраивается под сайт*/
+max-width: -webkit-fill-available;
 border-radius: 3%;
 display: flex;
 flex-direction: column;
@@ -85,11 +79,11 @@ flex-direction: column;
 }
 
 .links{
-  order: 2;
+  order: 2; /* Ссылки будут вторыми */
 }
 
 .form{
-  order: 3;
+  order: 3; /* Форма будет третьей */
 }
 
 .nav{
@@ -109,7 +103,6 @@ flex-direction: column;
   flex-direction: column;
 }
 
-
 @media (min-width: 576px) {
   .main{
     display: contents;
@@ -119,7 +112,6 @@ flex-direction: column;
     border-radius: 5%;
     padding: 50px;
     max-width: 960px;
-
   }
   .logo{
     display: flex;
@@ -129,17 +121,14 @@ flex-direction: column;
     flex-direction: row;
     margin-top: 15px;
     margin-right: 15px;
-
     }
 
     .links{
-      order: 2;
+      order: 1; /* В десктопной версии ссылки первые */
     }
 
-
     .table{
-      order: 1;
-
+      order: 2; /* В десктопной версии таблица вторые */
     }
 
     .header, .footer{
@@ -150,5 +139,4 @@ flex-direction: column;
     .field{
       width: 200px;
     }
-
 }
