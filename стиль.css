@@ -133,12 +133,12 @@ flex-direction: column;
     }
 
     .links{
-      order: 1;
+      order: 2;
     }
 
 
     .table{
-      order: 2;
+      order: 1;
 
     }
 
@@ -150,4 +150,5 @@ flex-direction: column;
     .field{
       width: 200px;
     }
+
 }
